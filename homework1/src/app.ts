@@ -1,4 +1,4 @@
-const firstClass = [
+const firstClass: Array<Object> = [
     {
         name: '윤자이',
         age: '26',
