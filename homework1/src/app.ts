@@ -2,21 +2,24 @@ const firstClass: Array<Object> = [
     {
         name: '윤자이',
         age: '26',
-        language: 'Java, Typescript, Javascript, Python',
+        github: 'github.com/ooeunz',
+        blog: 'ooeunz.tistory.com',
+        language: ['Java', 'Typescript', 'Javascript', 'Python', 'C++'],
         framework: [
             'Spring Framework',
             'Spring Boot',
             'Express.js',
             'React.js',
         ],
-        database: ['MySQL', 'MariaDB', 'MongoDB'],
+        database: ['MySQL', 'MariaDB', 'MongoDB', 'Redis'],
+        ai: ['Google Dialogflow(NLP)'],
         devops: [
             {
-                aws: ['ec2', 'rds', 's3'],
+                aws: ['ec2', 'rds', 's3', 'lambda'],
             },
             'docker',
         ],
-        award: [
+        awards: [
             {
                 name: 'KW해커톤',
                 category: '장려상',
@@ -36,6 +39,17 @@ const firstClass: Array<Object> = [
     },
     {
         name: '홍준엽',
+        age: '26',
+        language: 'C, Java, JavaScript, TypeScript',
+        framework: ['Express.js', 'Vue.js'],
+        database: ['firebase', 'redis', 'MongoDB'],
+        devops: [
+            {
+                aws: ['ec2', 's3'],
+                GCP: ['Google Compute Engine'],
+            },
+        ],
+        awards: [],
     },
     {
         name: '이유영',
