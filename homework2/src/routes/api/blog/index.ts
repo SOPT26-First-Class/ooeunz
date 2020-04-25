@@ -3,7 +3,7 @@ const router = express.Router();
 
 import post from './post';
 
-router.use('./post', post);
+router.use('/post', post);
 
 router.get('/', (req: Request, res: Response) => {
     res.send('blog');
