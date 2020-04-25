@@ -2,6 +2,7 @@
 
 ## :pineapple: Go to project
 * [1차 세미나 과제](https://github.com/SOPT26-First-Class/ooeunz/tree/master/homework1)
+* [2차 세미나 과제](https://github.com/SOPT26-First-Class/ooeunz/tree/master/homework2)
 
 \
 []()

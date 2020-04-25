@@ -1,12 +1,14 @@
 import express, { Request, Response, NextFunction } from 'express';
 const router = express.Router();
 
-import api from './api';
+import blog from './blog';
+import user from './user';
 
-router.use('/api', api);
+router.use('./blog', blog);
+router.use('./user', user);
 
 router.get('/', (req: Request, res: Response, next: NextFunction) => {
-    res.send('index');
+    res.send('/api');
 });
 
 export default router;
