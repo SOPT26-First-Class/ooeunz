@@ -1,21 +1,9 @@
-let isMomHappy: boolean = false;
+import cal from './mission/mission02';
 
-const willGetNewPhone: Promise<Object> = new Promise((resolve, reject) => {
-    let phone: Object = {
-        brand: 'Apple',
-        color: 'black',
-    };
+const a: number = 10;
+const b: number = 2;
 
-    if (isMomHappy) {
-        resolve(phone);
-    }
-    reject(`mom is not happy`);
-});
-
-willGetNewPhone
-    .then((phone) => {
-        console.log(phone);
-    })
-    .catch((str: String) => {
-        console.error(str);
-    });
+console.log(`a + b = ${cal.add(a, b)}`);
+console.log(`a - b = ${cal.sub(a, b)}`);
+console.log(`a * b = ${cal.mul(a, b)}`);
+console.log(`a // b = ${cal.div(a, b)}`);
