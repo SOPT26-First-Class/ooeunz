@@ -1,20 +1,21 @@
-let isMomHappy = true;
-let phone = {
-    brand: 'Apple',
-    color: 'black',
-};
+let isMomHappy: boolean = false;
 
-const willGetNewPhone = new Promise((resolve, reject) => {
+const willGetNewPhone: Promise<Object> = new Promise((resolve, reject) => {
+    let phone: Object = {
+        brand: 'Apple',
+        color: 'black',
+    };
+
     if (isMomHappy) {
-        resolve();
+        resolve(phone);
     }
-    reject();
+    reject(`mom is not happy`);
 });
 
 willGetNewPhone
-    .then(() => {
+    .then((phone) => {
         console.log(phone);
     })
-    .catch(() => {
-        console.error(`mom is not happy`);
+    .catch((str: String) => {
+        console.error(str);
     });
